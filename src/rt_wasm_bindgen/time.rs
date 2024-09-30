@@ -7,7 +7,7 @@ use std::time::Duration;
 
 use futures::stream;
 use futures::stream::Stream;
-use gloo::timers::callback::Timeout;
+use gloo_timers::callback::Timeout;
 
 #[inline(always)]
 pub(crate) fn sleep(dur: Duration) -> impl Future<Output = ()> {
